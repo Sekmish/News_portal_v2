@@ -1,0 +1,64 @@
+[2024-05-23 09:49:29,349] [ERROR] Internal Server Error: /
+/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/utils/log.py
+(<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 17: 'endcache'. Did you forget to register or load this tag?"), <traceback object at 0x7fa85e4e5080>)
+Traceback (most recent call last):
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endcache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'endcache'. Did you forget to register or load this tag?
+[2024-05-23 09:49:30,871] [ERROR] "GET / HTTP/1.1" 500 145
+/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/servers/basehttp.py
+None
+[2024-05-23 09:56:16,651] [ERROR] "PRI * HTTP/2.0" 505 -
+/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/servers/basehttp.py
+None
+[2024-05-23 09:56:32,114] [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/servers/basehttp.py
+None
+[2024-05-23 09:56:33,063] [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+/home/kutak/SkillFactory/News_Portal/.venv/lib/python3.10/site-packages/django/core/servers/basehttp.py
+None

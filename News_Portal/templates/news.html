@@ -1,0 +1,80 @@
+{% extends 'base/base_news.html' %}
+{% load bad_words %}
+{% load custom_tags %}
+{% load i18n %}
+{% load tz %}
+
+
+{% block title %}{% trans "Новости" %}{% endblock %}
+
+
+{% block content %}
+{#     <form action="" method="POST">#}
+{#    {% csrf_token %}#}
+{#    <label for="timezone">Time zone:</label>#}
+{#    <select name="timezone">#}
+{#        {% for tz in timezones %}#}
+{#        <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+{#    <input type="submit" value="Set">#}
+{#</form>#}
+             {{ TIME_ZONE }}
+    {{ current_time|timezone:TIME_ZONE }} <!-- Отображаем время в выбранном часовом поясе  -->
+    
+    <h1>{% trans "Новости" %}</h1>
+    <hr>
+    <h4>{% trans "По" %} {{ post|length }} {% trans "на странице" %}</h4>
+    <hr>
+    {% if perms.news.add_post %}
+    <a href="{% url 'post_create' post_type='news' %}">{% trans "Добавить новость" %}</a>
+    <a href="{% url 'post_create' post_type='articles' %}">{% trans "Добавить статью" %}</a>
+    {% endif %}
+    {% if post %}
+        <table>
+            <tr>
+                <td>{% trans "Заголовок" %}</td>
+                <td>{% trans "Дата публикации" %}</td>
+                <td>{% trans "Превью" %}</td>
+                {% if perms.news.change_post or perms.news.delete_post %}
+                <td>{% trans "Действия" %}</td>
+                {% endif %}
+            </tr>
+        {% for dpost in post %}
+            <tr>
+                <td>{% trans dpost.title|censor %}</td>
+                <td>{{ dpost.published|date:'d M Y' }}</td>
+                <td>{% trans dpost.content|censor|truncatewords:20 %}</td>
+                <td>
+                    {% if perms.news.change_post %}
+                        <a href="{% url 'post_update' post_type=dpost.post_type pk=dpost.id %}">{% trans "Изменить" %}</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+        {% else %}
+        <h3>Новостей нет</h3>
+    {% endif %}
+    {% if post %}
+    {% if page_obj.has_previous %}
+    <a href="?{% url_replace page=1 %}">1</a>
+    {% if page_obj.previous_page_number != 1  %}
+        ...
+        <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+    {% endif %}
+{% endif %}
+
+{{ page_obj.number }}
+{% if page_obj.has_next %}
+    <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+    {% if page_obj.paginator.num_pages != page_obj.next_page_number %}
+        ...
+        <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
+    {% endif %}    
+{% endif %}
+{% endif %}   
+  
+{% endblock %}
+
+

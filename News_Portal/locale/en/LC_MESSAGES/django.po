@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 11:36+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: news/admin.py:8 news/admin.py:33
+msgid "Категории"
+msgstr "Category"
+
+#: news/admin.py:28
+msgid "Заголовок"
+msgstr "Heading"
+
+#: news/admin.py:38
+msgid "Тип публикации"
+msgstr "Publication type"
+
+#: news/admin.py:43
+msgid "Дата публикации"
+msgstr "Publication date"
+
+#: templates/account/email/email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"Вы получили это сообщение, потому что пользователь %(user_display)s указал "
+"этот email при регистрации на сайте %(site_domain)s.\n"
+"\n"
+"Для подтверждения регистрации пройдите по ссылке %(activate_url)s\n"
+"\n"
+"Хорошего дня!\n"
+msgstr ""
+
+#: .\templates\news.html:7
+msgid "Новости"
+msgstr "News"
+
+#: .\templates\news.html:48
+msgid "Приветы всем вот скрипт"
+msgstr "Hello everyone here is the script"
+
+#: .\templates\news.html:50
+msgid "Здесь я пишу свой скрипт"
+msgstr "This is where I write my script"
+
+#: .\templates\news.html:48
+msgid "Спилберг фильм об НЛО, основанный на собственной идее"
+msgstr "Spielberg UFO film based on his own idea"
+
+#: .\templates\news.html:50
+msgid "Режиссер Стивен Спилберг работает над фильмом об НЛО. Об этом сообщает издание Variety. По данным издания, фильм будет не будет основываться на собственной идее создателя «Инопланетянина». Сценарий к проекту напишет Дэвид Кепп («Парк Юрского периода», «Миссия: невыполнима» и «Человек-паук»). Однако другие детали неизвестны."
+msgstr "Director Steven Spielberg is working on a film about UFOs. This was reported by Variety. According to the publication, the film will not be based on the E.T.'s creator's own idea. The script for the project will be written by David Koepp (Jurassic Park, Mission: Impossible and Spider-Man). However, other details are unknown."
+
+#: .\templates\news.html:40
+msgid "Превью"
+msgstr "Preview"
+
+msgid "Действия"
+msgstr "Actions"
+
+msgid "По"
+msgstr " "
+
+msgid "на странице"
+msgstr "per page"
+
+msgid "Изменить"
+msgstr "Change"
+
+msgid "Добавить новость"
+msgstr "Add news"
+
+msgid "Добавить статью"
+msgstr "Add an article"
+
+msgid "Совет Федерации утвердил Ирину Подносову председателем Верховного суда"
+msgstr "The Federation Council approved Irina Podnosova as Chairman of the Supreme Court"
+
+msgid "Новым председателем Верховного суда стала Ирина Подносова. Подносова училась на юрфаке ЛГУ в одно время с Владимиром Путиным, с 2020 года она была заместителем председателя ВС. В начале пленарного заседания в среду сенаторы утвердили Ирину Подносову председателем Верховного суда. В голосовании принимали участие 167 сенаторов, все они проголосовали за."
+msgstr "Irina Podnosova became the new chairman of the Supreme Court. Podnosova studied at the Law Faculty of Leningrad State University at the same time as Vladimir Putin, and since 2020 she has been Deputy Chairman of the Supreme Court. At the beginning of the plenary session on Wednesday, senators approved Irina Podnosova as chairman of the Supreme Court. 167 senators took part in the vote, all of them voted in favor."
+
+msgid "Bloomberg: неопределенность на Западе в отношении Украины играет на руку России"
+msgstr "Bloomberg: Uncertainty in the West regarding Ukraine plays into Russia's hands"
+
+msgid "МОСКВА, 17 апр — РИА Новости. Неопределенность стран Запада в отношении финансовой поддержки Киева и отсутствие решений по поставкам вооружений на Украину играет на руку России, написал обозреватель Bloomberg Энтони Хэлпин."
+msgstr "MOSCOW, April 17 – RIA Novosti. The uncertainty of Western countries regarding financial support for Kyiv and the lack of decisions on arms supplies to Ukraine plays into Russia’s hands, wrote Bloomberg columnist Anthony Halpin."
+
+msgid "Аэропорт Кольцово работает в штатном режиме"
+msgstr "Koltsovo Airport operates as normal"
+
+msgid "Аэропорт Шереметьево работает в штатном режиме и обеспечивает рейсы на прилет и вылет. Об этом ТАСС сообщили в пресс-службе аэропорта. Ранее Telegram-канал 112 написал, что аэропорт не выпускает и не принимает самолеты из-за угрозы БПЛА. «Аэропорт Шереметьево работает в штатном режиме. Рейсы на вылет и прилет обеспечиваются по расписанию», — отметили в Шереметьево."
+msgstr "Sheremetyevo Airport operates as usual and provides flights for arrivals and departures. The airport press service reported this to TASS. Earlier, Telegram channel 112 wrote that the airport does not release or accept aircraft due to the threat of UAVs. “Sheremetyevo Airport is operating as normal. Departure and arrival flights are provided as scheduled,” Sheremetyevo noted."
+
+msgid "Часовой пояс"
+msgstr "Time zone"
+
+msgid "Местное время"
+msgstr "Current time"
+
